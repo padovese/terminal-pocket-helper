@@ -10,6 +10,7 @@ docker run -d -p 12345:80 image_name | download or use a local image and set a f
 docker run -it image_name | download or use a local image and get in the container
 docker run --name personal_name image_name | set a name to the container
 docker run -d -P -e AUTHOR="PADOVESE" dockersamples/static-site | pass a parameter to docker application
+docker run -v '/host/directory:/container/directory' image_name | map a directory between host and container
 docker ps  | show running containers
 docker ps -a | show all containers
 docker start container_id | start a container
@@ -21,3 +22,4 @@ docker rm container_id | remove a container
 docker container prune | remove all containers
 docker rmi image_name | remove a local image
 docker port container_id | list container's port
+docker inspect container_id | show container informations, like mount directory
