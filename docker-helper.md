@@ -23,3 +23,5 @@ docker container prune | remove all containers
 docker rmi image_name | remove a local image
 docker port container_id | list container's port
 docker inspect container_id | show container informations, like mount directory
+docker run -p 8080:3000 -v "/home/padovese/Desktop/github/volume-exemplo:/var/www" -w "/var/www" node npm start | start a node application 
+docker images | show all local images
