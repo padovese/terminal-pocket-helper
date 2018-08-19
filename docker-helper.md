@@ -27,3 +27,6 @@ docker run -p 8080:3000 -v "/home/padovese/Desktop/github/volume-exemplo:/var/ww
 docker images | show all local images
 docker build -f node.dockerfile -t padovese/node . | build a dockerfile
 docker run -d -p 8080:3000 padovese/node | start the container
+docker login | log into dockerhub
+docker push image_name | push an image
+docker pull image_name | pull an image
