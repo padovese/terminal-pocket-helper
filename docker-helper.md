@@ -30,3 +30,6 @@ docker run -d -p 8080:3000 padovese/node | start the container
 docker login | log into dockerhub
 docker push image_name | push an image
 docker pull image_name | pull an image
+docker network create --driver bridge my-network | create a docker network
+docker network ls | list all docker's networks
+docker run -it --name my-contrainer --network my-network ubuntu | create a container inside my network
