@@ -24,7 +24,7 @@ docker rmi image_name | remove a local image
 docker port container_id | list container's port
 docker inspect container_id | show container informations, like mount directory
 docker run -p 8080:3000 -v "/home/padovese/Desktop/github/volume-exemplo:/var/www" -w "/var/www" node npm start | start a node application 
-docker run --env SPLUNK_START_ARGS="--accept-license --seed-passwd 12345678" -it --name splunk -p 8000:8000  splunk/splunk | start a splunk app
+docker run --env SPLUNK_START_ARGS="--accept-license --seed-passwd 12345678" -it --name splunk -p 8000:8000 -p 9997:9997 splunk/splunk | start a splunk app
 docker images | show all local images
 docker build -f node.dockerfile -t padovese/node . | build a dockerfile
 docker run -d -p 8080:3000 padovese/node | start the container
