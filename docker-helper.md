@@ -35,3 +35,4 @@ docker network create --driver bridge my-network | create a docker network
 docker network ls | list all docker's networks
 docker run -it --name my-contrainer --network my-network ubuntu | create a container inside my network
 docker exec -ti my-container bash | enter in a container that is running(in bash case), or exec any application
+docker cp script.sh container_name:absolute_path | cp, like a regular cp or scp
