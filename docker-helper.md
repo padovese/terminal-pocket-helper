@@ -36,3 +36,5 @@ docker network ls | list all docker's networks
 docker run -it --name my-contrainer --network my-network ubuntu | create a container inside my network
 docker exec -ti my-container bash | enter in a container that is running(in bash case), or exec any application
 docker cp script.sh container_name:absolute_path | cp, like a regular cp or scp
+docker-compose up -d | start all containers on an a docker-compose.yml file
+docker-compose build | build images from a docker-compose.yml file
